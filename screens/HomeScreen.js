@@ -39,6 +39,7 @@ const HomeScreen = () => {
                 renderItem={({ item }) => (
                     <ProductCard
                         key={item.name}
+                        id={item.id}
                         image={item.mediaUrl}
                         cat={item.category[0].name}
                         name={item.name}

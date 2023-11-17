@@ -13,7 +13,7 @@ const Loader = () => {
       <Text style={{
         fontSize:18,
         color:Colours.textColor
-      }}>Loading items ...</Text>
+      }}>Loading ...</Text>
     </View>
   )
 }
