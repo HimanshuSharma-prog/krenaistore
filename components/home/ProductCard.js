@@ -6,6 +6,8 @@ import { useNavigation } from '@react-navigation/native'
 
 const ProductCard = ({ image, cat, name, price,id }) => {
   const navigation=useNavigation()
+  const random=Math.round(Math.random()*10+1)
+  console.log('random :',random)
   return (
     <View style={styles.productCard}>
       <View style={styles.imgDiv}>
@@ -18,14 +20,18 @@ const ProductCard = ({ image, cat, name, price,id }) => {
           <AntDesign name='hearto' size={20} color={Colours.secondary} />
         </TouchableOpacity>
       </View>
-      <Text style={styles.smallText}>{cat}</Text>
+      <Text style={styles.smallText} onPress={() => {
+          navigation.navigate('Details',{id,random})
+        }}>{cat}</Text>
       <Text
         style={styles.text}
         onPress={() => {
-          navigation.navigate('Details',{id})
+          navigation.navigate('Details',{id,random})
         }}
       >{name}</Text>
-      <Text style={styles.text}>₹ {price}</Text>
+      <Text style={styles.text} onPress={() => {
+          navigation.navigate('Details',{id,random})
+        }}>₹ {price}</Text>
     </View>
   )
 }

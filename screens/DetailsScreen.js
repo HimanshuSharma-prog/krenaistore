@@ -8,7 +8,7 @@ import Loader from '../components/Loader'
 
 const DetailsScreen = ({ route }) => {
     console.log('route ;', route)
-    const id = route.params.id
+    const {id,random} = route.params
     const [productData, setProductData] = useState()
     const [similarData, setSimilarData] = useState([])
     const [loader,setLoader]=useState(false)

@@ -1,3 +1,5 @@
+This project include only two screen one is search products and second is the product details screen and i have used the expo to create this project
+
 # Getting Started with Create expo App
 
 This project was bootstrapped with [Create Expo App](https://expo.dev/).
@@ -20,9 +22,6 @@ or
 
 ## open ExpoGo in the mobile and scan the qrcode
 
-## API Used
-
-In this app the [Unsplash image api](https://unsplash.com/) is used to fetch the images
 
 ## For apk build use
 
